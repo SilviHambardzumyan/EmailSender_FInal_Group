@@ -1,17 +1,17 @@
 var logpass =  [
   { 
     email: "silvihambardzumyan1999@gmail.com",
-    lock: "123456"
+    password: "123456"
   }
 ]
 
 function getInfo() {
   var email = document.getElementById("email").value
-  var lock = document.getElementById("lock").value
+  var lock = document.getElementById("password").value
 
   console.log("correct")
 }
-
+                                                                                                                                                  
 function ChooseFromTheListBelow() {
         var mails = [
 {
