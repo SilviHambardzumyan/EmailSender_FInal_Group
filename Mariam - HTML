@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Convert JSON Data to HTML Table</title>
+    <link href = "style.css" rel="sylesheet" type="text/css"/>
+        <style>
+        th, td, p, input {
+            font:17px Timesnewroman;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, th, td
+        {
+            border: solid 1px #DDD;
+            padding: 2px 3px;
+            text-align: center;
+        }
+        th {
+            font-weight:bold;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: #777;
+            color: white;
+        }
+       
+    </style>
+</head>
+<body>
+   
+    <input type="button" onclick="ChooseFromTheListBelow()" value="Choose From The List Below" />
+    <p id="showData"></p>
+    
+</body>
+
+<script src="script.js"></script>
+</html>
