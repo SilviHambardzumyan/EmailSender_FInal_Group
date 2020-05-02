@@ -1,0 +1,138 @@
+*:focus {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #DDD;
+  font-size: 16px;
+  color: #222;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+#registration {
+  position: relative;
+  margin: 10% auto;
+  width: 600px;
+  height: 400px;
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+.text {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 520px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #c850c0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+.text:focus {
+  border-bottom: 2px solid #4158d0;
+  color: #c850c0;
+  transition: 0.2s ease;
+}
+
+.submit {
+  margin-top: 28px;
+  width: 120px;
+  height: 32px;
+  background: #c850c0;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+
+.submit:focus,
+.submit:hover {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+.submit:active {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+.account{
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 200px;
+  background-color: white;
+  padding: 50px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+  text-align: center;
+  font-family: Times New Roman;
+}
+
+.btn{
+  display: flex;
+}
+
+.email{
+  width: 200px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  border: 3px solid black;
+  cursor: pointer;
+  outline: none;
+}
+
+.em2{
+  margin-left: 30px;
+}
+
+.email:hover{
+  border: none;
+  background-color: #4158d0;
+  box-shadow: 2px 5px 8px #c850c0;
+  color: #fff;
+  transform: translateY(-7px);
+}
+
