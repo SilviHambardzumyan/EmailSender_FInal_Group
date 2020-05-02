@@ -7,7 +7,7 @@ body {
 }
 
 * {
-  margin: 0px; 
+	margin: 0px;
 	padding: 0px; 
 	box-sizing: border-box;
 }
@@ -37,9 +37,9 @@ body {
 	cursor: pointer;
 }
 
-#page1 .text1, .text2 {
+#page1 .text1 {
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 2.5;
   color: #666666;
   display: flex;
   flex-wrap: wrap;
@@ -47,6 +47,15 @@ body {
   align-items: center;
 }
 
+#page1 .text2 {
+  font-size: 15px;
+  line-height: 2.5;
+  color: #666666;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
 #newacc {
   font-size: 15px;
@@ -96,12 +105,6 @@ body {
   background-image: url("mail.png");
   background-repeat: no-repeat;
   background-position: 10mm;
-}
-
-#page1 input#email:-internal-autofill-selected {
-    background-color: rgb(255, 0, 0) !important;
-    background-image: url("mail.png") !important;
-    color: -internal-light-dark-color(black, white) !important;
 }
 
 #page1 input#password {
@@ -185,20 +188,6 @@ body {
  display: none;
 }
 
-th, td, p, input {
-    font:17px Timesnewroman;
-}
-table, th, td 
-{
-    border: solid 1px #DDD;
-    border-collapse: collapse;
-    padding: 2px 3px;
-    text-align: center;
-}
-th {
-    font-weight:bold;
-}
-
 #page4 {
   height: 100%;
   margin: 100px;
@@ -208,7 +197,7 @@ th {
   color: #fff;
 }
 
-.EmailCreation {
+#page4 .EmailCreation {
   width: 900 px;
   background: #fff;
   border-radius: 10px;
@@ -220,11 +209,11 @@ th {
   font-size: 20px
 }
 
-#subject {
+#page4 .subject {
   width: 75%
 }
 
-#button, send {
+#page4 .button, send {
   padding: 5px;
   text-align: center;
   font-size: 11px;
@@ -240,14 +229,17 @@ th {
   color: cornflowerblue;
 }
 
+#Back:hover {
+  cursor: pointer;
+}
+
 #page0 *:focus {
   outline: none;
 }
 
 #page0 body {
-  margin: 0;
-  padding: 0;
-  background: #DDD;
+  height: 100%;
+  margin: 100px;
   font-size: 16px;
   color: #222;
   font-family: 'Roboto', sans-serif;
@@ -256,12 +248,12 @@ th {
 
 #page0 {
   position: relative;
-  margin: 10% auto;
+  margin: 100px auto;
   width: 600px;
   height: 400px;
   background: #FFF;
-  border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 30px;
 }
 
 #page0 .content {
@@ -278,6 +270,8 @@ th {
   margin: 0 0 20px 0;
   font-weight: 300;
   font-size: 28px;
+  text-align: center;
+  font-family: Times New Roman;
 }
 
 #page0 .text {
@@ -311,22 +305,8 @@ th {
   color: #FFF;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  text-transform: uppercase;
   transition: 0.1s ease;
   cursor: pointer;
-}
-
-#page0 .submit:focus,
-.submit:hover {
-  opacity: 0.8;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  transition: 0.1s ease;
-}
-
-#page0 .submit:active {
-  opacity: 1;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-  transition: 0.1s ease;
 }
 
 #page0 .account{
@@ -336,11 +316,6 @@ th {
   background-color: white;
   padding: 50px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-}
-
-#page0 h1{
-  text-align: center;
-  font-family: Times New Roman;
 }
 
 #page0 .btn{
@@ -376,4 +351,92 @@ th {
   box-shadow: 2px 5px 8px #c850c0;
   color: #fff;
   transform: translateY(-7px);
+}
+
+#page2 .myaccount {
+  height: 100%;
+  background: #fff;
+  border-radius: 10px;
+  display: block; 
+  justify-content: space-between;
+  padding: 50px;
+  font-size: 20px;
+  margin: 150px;
+}
+
+#page2 {
+  height: 100%;
+  margin: 100px;
+} 
+
+#page2 h1, h2 {
+  text-align: center;
+}
+
+#page2 button:hover {
+	cursor: pointer;
+}
+
+#page2 button {
+  font-size: 15px;
+  line-height: 1.5;
+  color: black;
+  height: 50px;
+  border-radius: 25px;
+  background: #c8cedac9;
+  padding: 0 30px;
+  position: relative;
+  width: 30%;
+  z-index: 0;
+  align-items: center;
+  margin-block-end: -1000pc;
+}
+
+#page3 .list {
+  height: 50%;
+  background: #fff;
+  border-radius: 10px;
+  display: block;
+  justify-content: space-between;
+  padding-left: 25%;
+  font-size: 20px;
+  margin: 150px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+#page3 .chooseemail:hover{
+  cursor: pointer;
+}
+
+#page3 input{
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 2;
+  display: block;
+  position: relative;
+  background: #e6e6e6;
+  height: 50px;
+}
+
+th, td, p, input {
+  font: 17px Timesnewroman;
+  border-collapse: collapse;
+  width: 57%;
+}
+
+table, th, td {
+  border: solid 1px #DDD;
+  padding: 2px 3px;
+  text-align: center;
+}
+
+th {
+  font-weight: bold;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #777;
+  color: white;
 }
