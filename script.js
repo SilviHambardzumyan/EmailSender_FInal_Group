@@ -88,12 +88,3 @@ function SubjectCharacters (inputtxt, minlength, maxlength) {
 function sendfunction() {
   document.getElementById("submitvalid").innerHTML = "Your email has been sent.";
 }
-
-function myFunction(){
-	var username = document.getElementById('username').value;
-	var login = document.getElementById('login').value;
-	var pass = document.getElementById('password').value;
-	var hellodiv = document.getElementById('hellodiv');
-
-	console.log(username, login, pass);
-}
