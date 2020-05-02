@@ -166,3 +166,40 @@ input#password {
   align-items: center;
   padding: 0 30px;
 }
+
+
+
+Anna 
+html, body {
+background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+body{
+  margin:100px
+}
+
+.EmailCreation {
+  width: 900 px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  display: -webkit-box;
+ display: -moz-box; 
+ justify-content: space-between;
+ padding: 120px 120px 50px 50px;
+ font-size: 20px
+}
+
+#subject {
+  width: 75%
+}
+
+#button, send {
+  padding: 5px;
+  text-align: center;
+  font-size: 11px;
+}
+
+
