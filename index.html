@@ -38,44 +38,48 @@
           <br>
           <a class="text2" href="#" onclick="goToPage('page0')">
           Create New Account!
+          </a>
           </button>
         </div>
       </form>
       </div>
     </div>
-    <!-- new account Mary -->
-    <div id="page0">
-      <div class="content page">
+
+    <div id="page0" class="content page">
+      <button id="Back" class="back" type="button" onclick="goToPage('page1')">Back</button>
       <h1>Sign up</h1>
-        
         <input type="text" class="text" placeholder="Username" id="username" />
         <input type="text" class="text" placeholder="Login" id="login" />
         <input type="password" class="text" placeholder="Password" id="password" />
-        <input type="text" class="text" placeholder="E-mail" />
+        <input type="text" class="text" placeholder="Email" />
         
-        <a href="file:///C:/Users/Sony/Desktop/mary.html"><input type="submit" class="submit" value="Sign me up" onclick="myFunction()" /></a>
-          <div id="hellodiv"></div>
-      </div>
+        <input type="submit" class="submit" value="Sign me up" onclick="myFunction()" />
     </div>
+
 <!-- My Account page (Mary) -->
     <div id="page2" class="page" >
-      <h1>My Account</h1>
-    	<div class="btn">
-        <button id="page2" class="newemail" type="button" onclick="goToPage('page4')">Compose New E-mail</button></a>
-      	<a href=""><button class="email em2" >E-mail List</button></a>
-      	<a href="file:///C:/Users/Sony/Desktop/from.html"><button class="email em2" >Log Out</button></a>
+    <div class="myaccount"> 
+      <h1>My Account</h1> 
+      <h2> <small> Silvi Hambardzumyan </small> </h2>
+        <button id="page2" class="newemail" type="button" onclick="goToPage('page4')">Compose New Email</button>
+        <button id="page2" class="list" type="button" onclick="goToPage('page3')">Email List</button>
+        <button id="page2" class="Logout" type="button" onclick="goToPage('page1')">Logout</button>
       </div>   	
     </div>
 
 <!-- Mariam's page, after My Account -->
     <div id="page3" class="page">
-     <input type="button" onclick="ChooseFromTheListBelow()" value="Choose From The List Below" />
-      <p id="showData"></p> 
-      <button id="page1" class="l-p-input-form-button" type="button" onclick="goToPage('page1')">
-      Logout
-      </button>
+      <div class="list">
+      <button id="Back" class="back" type="button" onclick="goToPage('page2')">Back</button>
+      <br>
+      <br>
+      <input type="button" class="chooseemail" onclick="ChooseFromTheListBelow()" value="Choose From The List Below" />
+      <br>
+      <p id="showData" </p> 
+      </div>
     </div>
-    <!-- Anna -->
+
+<!-- Anna -->
      
     <div id="page4" class="page"> 
       <h1> Create Your Personalized Emails </h1>
