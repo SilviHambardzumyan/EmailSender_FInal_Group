@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Email Sender</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="page1" class="container-login page"> 
+      <div class="wrap-login">  
+      <div class="logo">
+        <img src="logo2.png" alt="IMG">
+      </div>
+      <form class="login-form"> 
+        <span class="login-form-title"> 
+        Login
+        </span>
+        <div class="wrap-l-p-input">
+          <input id="email" class="l-p-input" type="email" name="email" placeholder="Email">
+        </div>
+        <div class="wrap-l-p-input">
+          <input id="password" class="l-p-input" type="password" name="pass" placeholder="Password">
+        </div>
+        <br>
+        <span id="loginvalid"> </span>
+        <div class="container-login-form-button">
+          <button id="page1" class="l-p-input-form-button" type="button" onclick="login('page2')">
+          Login
+          </button>
+        </div>
+        <br>
+        <div class="text">
+          <a class="text1" href="#">
+          Reset Password? </a>
+          <br>
+          <a class="text2" href="#" onclick="goToPage('page0')">
+          Create New Account!
+          </button>
+        </div>
+      </form>
+      </div>
+    </div>
+    <!-- new account Mary -->
+    <div id="page0">
+      <div class="content page">
+      <h1>Sign up</h1>
+        
+        <input type="text" class="text" placeholder="Username" id="username" />
+        <input type="text" class="text" placeholder="Login" id="login" />
+        <input type="password" class="text" placeholder="Password" id="password" />
+        <input type="text" class="text" placeholder="E-mail" />
+        
+        <a href="file:///C:/Users/Sony/Desktop/mary.html"><input type="submit" class="submit" value="Sign me up" onclick="myFunction()" /></a>
+          <div id="hellodiv"></div>
+      </div>
+    </div>
+<!-- My Account page (Mary) -->
+    <div id="page2" class="page" >
+      <h1>My Account</h1>
+    	<div class="btn">
+        <button id="page2" class="newemail" type="button" onclick="goToPage('page4')">Compose New E-mail</button></a>
+      	<a href=""><button class="email em2" >E-mail List</button></a>
+      	<a href="file:///C:/Users/Sony/Desktop/from.html"><button class="email em2" >Log Out</button></a>
+      </div>   	
+    </div>
+
+<!-- Mariam's page, after My Account -->
+    <div id="page3" class="page">
+     <input type="button" onclick="ChooseFromTheListBelow()" value="Choose From The List Below" />
+      <p id="showData"></p> 
+      <button id="page1" class="l-p-input-form-button" type="button" onclick="goToPage('page1')">
+      Logout
+      </button>
+    </div>
+    <!-- Anna -->
+     
+    <div id="page4" class="page"> 
+      <h1> Create Your Personalized Emails </h1>
+      <br>
+      <form name="EmailCreation" action="/action_page.php" onsubmit="sendfunction()" class="EmailCreation">
+      <button id="Back" class="back" type="button" onclick="goToPage('page2')">Back</button>
+      <br>
+      <br>
+      <label for="EmailList"> Recepient:</label> <br>
+      <input list="EmailList" name="EmailList">
+      <datalist id="EmailList">
+      </datalist><br><br>
+      <label for="subject" id= "subject"> Subject: </label><br>
+      <input type="text" id="subject" name="subject" required> 
+      <br>
+      <br>
+      <span id="subjectValid">  </span>
+      <br>
+      <button type="button" id= "button" onclick="SubjectCharacters(document.EmailCreation.subject,5,50)"> Check subject recommendations </button><br> <br> 
+
+      <label for="mytext1"> Email Content: </label> <br><br>
+      <textarea id="w3mission" rows="20" cols="175"> 
+        </textarea><br><br>
+        <input type="submit" id = "send" value="Send">
+        <span id="submitvalid"> </span>
+      </form>
+      <br>
+      <details>
+        <summary>Copyright 2000-2020.</summary>
+      </details>
+    </div>
+
+  </body>
+</html>
