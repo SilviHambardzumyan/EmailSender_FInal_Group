@@ -68,3 +68,46 @@
 <script src="script.js"></script>
 </html>
 
+  
+  Anna 
+  <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <h1>Create Your Personalized Emails</h1>
+        <p> Now it's time for you to create the email sequences to send to your prospects.You only have one chance to make a good first impression, which is why we suggest that your content is short and precise. Good luck!</p>
+
+  <form name="EmailCreation" action="/action_page.php" onsubmit="sendfunction()" class="EmailCreation">
+  <label for="EmailList"> Recepient:</label> <br>
+  <input list="EmailList" name="EmailList">
+  <datalist id="EmailList">
+    <option value="anna.m@gmail.com">
+    <option value="steff.g@gmail.com">
+    <option value="t.smith@gmail.com">
+    <option value="h.brown@gmail.com">
+  </datalist><br><br>
+  <label for="subject" id= "subject"> Subject: </label><br>
+  <input type="text" id="subject" name="subject" required> 
+  <br>
+  <span id="subjectValid"></span>
+  <br>
+  <button type="button" id= "button" onclick="SubjectCharacters(document.EmailCreation.subject,5,50)"> Check subject recommendations </button><br> <br> 
+
+  <label for="mytext1"> Email Content: </label> <br><br>
+<textarea id="w3mission" rows="20" cols="175"> 
+  </textarea><br><br>
+  <input type="submit" id = "send" value="Send">
+</form>
+
+<details>
+  <summary>Copyright 2000-2020.</summary>
+</details>
+  </body>
+</html>
+
