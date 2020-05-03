@@ -209,14 +209,21 @@ body {
   font-size: 20px
 }
 
-#page4 .subject {
+#page4 #subject {
   width: 75%
 }
+#page4 #recepient{
+width: 50%
+}
 
-#page4 .button, send {
+#page4 #button, #send {
   padding: 5px;
   text-align: center;
   font-size: 11px;
+}
+
+.send {
+  width = 20%
 }
 
 #subjectValid {
@@ -522,9 +529,13 @@ body {
   height: 50px;
 }
 
-th, td, p, input {
+th, td, p {
   font: 17px Timesnewroman;
   border-collapse: collapse;
+  width: 57%;
+}
+
+.chooseemail {
   width: 57%;
 }
 
