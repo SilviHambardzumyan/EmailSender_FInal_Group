@@ -52,8 +52,10 @@
         <input type="text" class="text" placeholder="Login" id="login" />
         <input type="password" class="text" placeholder="Password" id="password" />
         <input type="text" class="text" id="email" placeholder="Email" />
+
+        <p id="error" style="color:red; font-size:15px; "><p>
         
-        <a href="#" onclick="goToPage ('page2')"><input type="submit" class="submit" value="Sign me up">
+        <a href="#" onclick=" signup()"><input type="submit" class="submit" value="Sign me up">
         </a>
     </div>
 
@@ -116,3 +118,4 @@
 
   </body>
 </html>
+
