@@ -209,21 +209,14 @@ body {
   font-size: 20px
 }
 
-#page4 #subject {
+#page4 .subject {
   width: 75%
 }
-#page4 #recepient{
-width: 50%
-}
 
-#page4 #button, #send {
+#page4 .button, send {
   padding: 5px;
   text-align: center;
   font-size: 11px;
-}
-
-.send {
-  width = 20%
 }
 
 #subjectValid {
@@ -390,7 +383,8 @@ width: 50%
 
 #page2 {
   height: 100%;
-  margin: 100px;
+  margin-bottom: 100px;
+  margin-left: 10%;
 } 
 
 #page2 h1 {
@@ -403,7 +397,7 @@ width: 50%
 }
 
 #page2 .em2{
-  margin-left: 20px;
+  margin-left: 10%;
 }
 
 #page2 h2 {
@@ -442,7 +436,7 @@ width: 50%
 
 
 #page2 .newemail{
-  width: 200px;
+  width: 20%;
   height: 45px;
   font-family: 'Roboto', sans-serif;
   font-size: 11px;
@@ -462,7 +456,7 @@ width: 50%
 }
 
 #page2 .list{
-  width: 200px;
+  width: 20%;
   height: 45px;
   font-family: 'Roboto', sans-serif;
   font-size: 11px;
@@ -482,7 +476,7 @@ width: 50%
 }
 
 #page2 .Logout{
-  width: 200px;
+  width: 20%;
   height: 45px;
   font-family: 'Roboto', sans-serif;
   font-size: 11px;
@@ -529,13 +523,9 @@ width: 50%
   height: 50px;
 }
 
-th, td, p {
+th, td, p, input {
   font: 17px Timesnewroman;
   border-collapse: collapse;
-  width: 57%;
-}
-
-.chooseemail {
   width: 57%;
 }
 
