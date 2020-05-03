@@ -8,11 +8,12 @@ function login(nextPage) {
   var pass = document.getElementById("password").value;
 
   if (email == logpass["email"] && pass == logpass["password"]) {
-    goToPage(nextPage)
+    goToPage(nextPage);
   } else {
     document.getElementById("loginvalid").innerHTML = "Email or Password is not correct!"
   }
 }
+
 
 function goToPage(nextpage) {
   
@@ -28,6 +29,23 @@ function goToPage(nextpage) {
     document.getElementById(nextpage).style = "display: flex;"
   }
 }
+
+function signup(nextpage){
+
+ 	var username = document.getElementById('username').value;
+ 	var login = document.getElementById('login').value;
+ 	var pass = document.getElementById('password').value;
+ 	var email = document.getElementById('email').value;
+  var error = document.getElementById('error');
+
+   if(username != "" || login != "" && pass != "" && email != ""){
+     goToPage('page2');
+   }
+   else{
+     error.innerText = "Please Fill in All the Fields";
+     throw new Error("Something went badly wrong!");
+   }
+ }
 
 function ChooseFromTheListBelow() {
    
@@ -89,14 +107,4 @@ function sendfunction() {
   document.getElementById("submitvalid").innerHTML = "Your email has been sent.";
 }
 
-// function myFunction(){
-
-// 	var username = document.getElementById('username').value;
-// 	var login = document.getElementById('login').value;
-// 	var pass = document.getElementById('password').value;
-// 	var email = document.getElementById('email');
-
-//   if(username.value.length = 0 || login.value.length = 0 || pass.value.length = 0 || email.value.length = 0){
-//     throw new Error("Something went badly wrong!");
-//   }
-// }
+ 
