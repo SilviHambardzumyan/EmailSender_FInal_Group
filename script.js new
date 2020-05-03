@@ -22,7 +22,7 @@ function goToPage(nextpage) {
   }
  
   document.getElementById(nextpage).style = "display: block;"
-  if (nextpage == "page3") {
+  if (nextpage == "page4") {
     loadRecepients()
   } else if (nextpage == "page1") {
     document.getElementById(nextpage).style = "display: flex;"
@@ -100,4 +100,3 @@ function sendfunction() {
 //     throw new Error("Something went badly wrong!");
 //   }
 // }
-
